@@ -8,7 +8,7 @@
     tools:context=".menuRegistrar">
 
     <EditText
-        android:id="@+id/txt_dni5"
+        android:id="@+id/rtxt_tipo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
@@ -22,7 +22,7 @@
         app:layout_constraintVertical_bias="0.856" />
 
     <EditText
-        android:id="@+id/txt_dni3"
+        android:id="@+id/rtxt_nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -36,7 +36,7 @@
         app:layout_constraintVertical_bias="0.446" />
 
     <EditText
-        android:id="@+id/txt_dni4"
+        android:id="@+id/rtxt_apellido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -181,7 +181,7 @@
         app:layout_constraintVertical_bias="0.368" />
 
     <Button
-        android:id="@+id/btn_volver"
+        android:id="@+id/rbtn_volver"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
@@ -193,7 +193,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/rbtn_registrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
@@ -205,7 +205,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/txt_dni"
+        android:id="@+id/rtxt_dni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -219,7 +219,7 @@
         app:layout_constraintVertical_bias="0.141" />
 
     <EditText
-        android:id="@+id/txt_dni2"
+        android:id="@+id/rtxt_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
@@ -233,52 +233,56 @@
         app:layout_constraintVertical_bias="0.223" />
 
     <EditText
-        android:id="@+id/txt_contrasena"
+        android:id="@+id/rtxt_concontrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="12dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.364" />
+        app:layout_constraintVertical_bias="0.365" />
 
     <EditText
-        android:id="@+id/txt_contrasena2"
+        android:id="@+id/rtxt_contrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.291" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/rtxt_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.62" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/rtxt_tlf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:inputType="phone"
+        android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
