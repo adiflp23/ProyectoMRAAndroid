@@ -2,10 +2,12 @@ package com.example.mesonrafaelalberti;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.sql.PreparedStatement;
 
@@ -30,66 +32,75 @@ public class menuRegistrar extends AppCompatActivity {
         b2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                try {
-                    PreparedStatement ps;
-                    conexionMYSQL con = new conexionMYSQL();
-
-                    con.ConectarBasedeDatos();
-                    String DNI = ed1.getText().toString();
-                    String usuario = ed2.getText().toString();
-                    String contrasena = String.valueOf(ed3.getText());
-                    String concontrasena = String.valueOf(ed4.getText());
-                    String nombre = ed5.getText().toString();
-                    String apellido = ed6.getText().toString();
-                    String email = ed7.getText().toString();
-                    int telefono = Integer.parseInt(String.valueOf(ed8.getText()));
-                    String codigo = ed9.getText().toString();
-                    String ADM = "colega";
-
-                    String sql;
-
-                    sql = "insert into usuarios(DNI, usuario, contrasena, nombre, apellido, email, telefono, tipo_usuario) values(?,?,?,?,?,?,?,?)";
-                    try {
-                        ps = con.conexion.prepareStatement(sql);
-
-                        ps.setString(1, DNI);
-
-                        ps.setString(2, usuario);
-
-                        ps.setString(3, contrasena);
-
-                        ps.setString(4, nombre);
-
-                        ps.setString(5, apellido);
-
-                        ps.setString(6, email);
-
-                        ps.setInt(7, telefono);
-
-                        if (codigo.equals(ADM)) {
-                            ps.setInt(8, 1);
-                        } else {
-                            ps.setInt(8, 0);
-                        }
-
-                        if (contrasena.equals(concontrasena)) {
-
-                            try {
-                                ps.executeUpdate();
-                            } catch (Exception e) {
-                                System.out.println("ERROR USUARIO NO INSERTADO");
-                            }
-                        } else {
-                        }
-
-                    } catch (Exception e) {
-                    }
-
-                } catch (Exception e) {
-                }
+            registrarUsuarios();
             }
         });
 
 
+    }
+    public void registrarUsuarios() {
+        try {
+            PreparedStatement ps;
+            conexionMYSQL con = new conexionMYSQL();
+
+            con.ConectarBasedeDatos();
+            String DNI = ed1.getText().toString();
+            String usuario = ed2.getText().toString();
+            String contrasena = String.valueOf(ed3.getText());
+            String concontrasena = String.valueOf(ed4.getText());
+            String nombre = ed5.getText().toString();
+            String apellido = ed6.getText().toString();
+            String email = ed7.getText().toString();
+            int telefono = Integer.parseInt(String.valueOf(ed8.getText()));
+            String codigo = ed9.getText().toString();
+            String ADM = "colega";
+
+            String sql;
+
+            sql = "insert into usuarios(DNI, usuario, contrasena, nombre, apellido, email, telefono, tipo_usuario) values(?,?,?,?,?,?,?,?)";
+            try {
+                ps = con.conexion.prepareStatement(sql);
+
+                ps.setString(1, DNI);
+
+                ps.setString(2, usuario);
+
+                ps.setString(3, contrasena);
+
+                ps.setString(4, nombre);
+
+                ps.setString(5, apellido);
+
+                ps.setString(6, email);
+
+                ps.setInt(7, telefono);
+
+                if (codigo.equals(ADM)) {
+                    ps.setInt(8, 1);
+                } else {
+                    ps.setInt(8, 0);
+                }
+
+                if (contrasena.equals(concontrasena)) {
+
+                    try {
+                        ps.executeUpdate();
+                        Toast.makeText(getApplicationContext(),"usuario insertado correctamente", Toast.LENGTH_SHORT).show();
+                    } catch (Exception e) {
+                        Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
+                    }
+                } else {
+                }
+
+            } catch (Exception e) {
+            }
+
+        } catch (Exception e) {
+        }
+    }
+    public void MainActivity(View view){
+        Intent MainActivity = new Intent(this, MainActivity.class);
+        startActivity(MainActivity);
+        finish();
     }
 }
