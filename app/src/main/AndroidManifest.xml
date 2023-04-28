@@ -16,16 +16,28 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="Lanzar.Main"
+            android:name="BistroDeLaMer.InformacionDetallaBDLM"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.PantallaPrincipalTGC"
+            android:exported="false" />
+        <activity
+            android:name="BistroDeLaMer.PrimeraPantallaBDLM"
+            android:exported="false" />
+        <activity
+            android:name=".PrimeraPantalla"
+            android:exported="false" />
+        <activity
+            android:name="Lanzar.CerrarAplicacion"
+            android:exported="false" />
+        <activity
+            android:name="Lanzar.AyudaRestaurantes"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name="Lanzar.ConsultarRestaurantes"
-            android:exported="false" />
-        <activity
-            android:name=".menuAdmin"
             android:exported="false" />
         <activity
             android:name=".menuRegistrar"

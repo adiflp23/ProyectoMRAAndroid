@@ -1,29 +1,27 @@
 package Lanzar;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+import android.transition.Fade;
+import android.transition.Transition;
 import android.view.View;
 
-import com.example.mesonrafaelalberti.MainActivity;
 import com.example.mesonrafaelalberti.R;
 
-public class PantallaPrincipal extends AppCompatActivity {
+public class AyudaRestaurantes extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla_principal);
+        setContentView(R.layout.activity_ayuda_restaurantes);
     }
+    private Transition transition;
     public void ConsultarRestaurantes(View view){
         Intent ConsultarRestaurantes = new Intent(this, ConsultarRestaurantes.class);
         startActivity(ConsultarRestaurantes);
-        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
         finish();
     }
 }

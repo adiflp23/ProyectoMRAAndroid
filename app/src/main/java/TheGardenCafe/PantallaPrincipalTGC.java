@@ -1,14 +1,16 @@
-package com.example.mesonrafaelalberti;
+package TheGardenCafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class menuAdmin extends AppCompatActivity {
+import com.example.mesonrafaelalberti.R;
+
+public class PantallaPrincipalTGC extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_admin);
+        setContentView(R.layout.activity_pantalla_principal_tgc);
     }
 }
