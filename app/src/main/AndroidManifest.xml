@@ -16,10 +16,52 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name="BistroDeLaMer.InformacionDetallaBDLM"
+            android:name="TheGardenCafe.ConsultarHorarioTGC"
             android:exported="false" />
         <activity
-            android:name="TheGardenCafe.PantallaPrincipalTGC"
+            android:name=".ConsultarHorarioMRA"
+            android:exported="false" />
+        <activity
+            android:name="BistroDeLaMer.ConsultarHorarioBDLM"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.InformacionDetallaTGCClon"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionDetallaMRAClon"
+            android:exported="false" />
+        <activity
+            android:name="BistroDeLaMer.InformacionDetallaBDLMClon"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.RegistrarTGC"
+            android:exported="false" />
+        <activity
+            android:name=".Registrar"
+            android:exported="false" />
+        <activity
+            android:name="BistroDeLaMer.RegistrarBDLM"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.LoginTGC"
+            android:exported="false" />
+        <activity
+            android:name="BistroDeLaMer.LoginBDLM"
+            android:exported="false" />
+        <activity
+            android:name=".InformacionDetallaMRA"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.InformacionDetallaTGC"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.PrimeraPantallaTGC"
+            android:exported="false" />
+        <activity
+            android:name="BistroDeLaMer.InformacionDetallaBDLM"
             android:exported="false" />
         <activity
             android:name="BistroDeLaMer.PrimeraPantallaBDLM"

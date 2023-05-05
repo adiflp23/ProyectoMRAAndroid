@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.example.mesonrafaelalberti.R;
 
-public class PantallaPrincipalTGC extends AppCompatActivity {
+public class ConsultarHorarioTGC extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pantalla_principal_tgc);
+        setContentView(R.layout.activity_consultar_horario_tgc);
     }
 }

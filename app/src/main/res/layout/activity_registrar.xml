@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="450dp"
+                android:src="@drawable/meson_rafael_alberti_negro" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.03"
+                android:text="Registrar"
+                android:textColor="#000000"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edDniMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:hint="DNI"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edUsuarioMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:hint="Usuario"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edContrasenaMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edNombreMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:hint="Nombre"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edApellidoMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:hint="Apellido"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edEmailMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:hint="Email"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edTelefonoMRA"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forgetmra"
+                android:ems="10"
+                android:hint="Número de Telefono"
+                android:inputType="phone"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_registrarMRA"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="@color/black"
+                android:text="Registrar"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="¿Ya tienes una cuenta creada? Inicia Sesión"
+                android:textColor="#000000"
+                android:onClick="LoginMRA"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="35dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

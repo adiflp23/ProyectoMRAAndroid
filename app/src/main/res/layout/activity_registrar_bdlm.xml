@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="500dp"
+                android:layout_height="450dp"
+                android:src="@drawable/bistro_de_la_mer_removebg_azul" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.03"
+                android:text="Registrar"
+                android:textColor="#00BCD4"
+                android:textSize="35dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edDniBDLM"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:hint="DNI"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edUsuarioBDLM"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:hint="Usuario"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edContrasenaBDLM"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edNombreBDLM"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:hint="Nombre"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edApellidoBDLM"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:hint="Apellido"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edEmailBDLM"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:hint="Email"
+                android:paddingLeft="20dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edTelefonoTGC"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/forget"
+                android:ems="10"
+                android:inputType="phone"
+                android:hint="Número de Telefono"
+                android:paddingLeft="20dp"
+                android:textColor="#0d6e6a"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+
+            <Button
+                android:id="@+id/btn_registrarBDLM"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#00BCD4"
+                android:text="Registrar"
+                android:textColor="#FFF"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:cornerRadius="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="¿Ya tienes una cuenta creada? Inicia Sesión"
+                android:textColor="#00BCD4"
+                android:textSize="18dp"
+                android:onClick="LoginBDLM"
+                android:textStyle="bold"
+                android:layout_marginBottom="35dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

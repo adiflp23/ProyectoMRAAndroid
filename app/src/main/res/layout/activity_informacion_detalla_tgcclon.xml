@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="BistroDeLaMer.InformacionDetallaBDLM"
-    >
+    tools:context="TheGardenCafe.InformacionDetallaTGCClon">
+
 
     <ImageView
-        android:id="@+id/imagen_recortada"
+        android:id="@+id/imagen_recortadaTGC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="516dp"
@@ -16,10 +16,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/bdlm_recortada" />
+        app:srcCompat="@drawable/tgc_recortada" />
 
     <ImageView
-        android:id="@+id/cruzabajo"
+        android:id="@+id/cruzabajoTGC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:id="@+id/scrollIDetalla"
+        android:id="@+id/scrollIDetallaTGC"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginStart="15dp"
@@ -42,7 +42,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imagen_recortada"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_recortadaTGC"
         >
         <LinearLayout
             android:layout_width="match_parent"
@@ -50,10 +50,10 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/tituloo"
+                android:id="@+id/titulooTGC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Bistró De La Mer"
+                android:text="The Garden Café"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold|italic" />
@@ -64,7 +64,7 @@
                 android:orientation="horizontal">
 
                 <RatingBar
-                    android:id="@+id/ratingBarIDetalla1"
+                    android:id="@+id/ratingBarIDetalla1TGC"
                     style="?android:attr/ratingBarStyleSmall"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -75,22 +75,22 @@
                     android:rating="4.5"
                     android:stepSize="0.5"/>
                 <TextView
-                    android:id="@+id/numDelRatingBarIDetalla"
+                    android:id="@+id/numDelRatingBarIDetallaTGC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_marginLeft="8dp"
-                    android:text="4.96"
+                    android:text="4.45"
                     android:textColor="@color/black"
                     android:textSize="15sp"
                     />
                 <TextView
-                    android:id="@+id/numDeCalificacionesIDetalla"
+                    android:id="@+id/numDeCalificacionesIDetallaTGC"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="5dp"
                     android:layout_marginLeft="5dp"
-                    android:text="(35)"
+                    android:text="(225)"
                     android:textColor="@color/black"
                     android:textSize="15sp"/>
 
@@ -98,7 +98,7 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/Sobre"
+                android:id="@+id/SobreTGC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
@@ -107,47 +107,57 @@
                 android:textSize="15sp"
                 android:textStyle="bold" />
             <TextView
-                android:id="@+id/Textoo"
+                android:id="@+id/TextooTGC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:alpha="0.5"
-                android:text="Bistró de la Mer es un restaurante francés que ofrece una selección de deliciosos platillos del mar,
-                preparados con los ingredientes más frescos. Con una decoración elegante y acogedora, este bistró es el lugar perfecto para disfrutar de una cena romántica o una comida con amigos y familiares en un ambiente relajado."
+                android:text="The Garden Café es un restaurante con una atmósfera relajada que ofrece una amplia variedad de platillos saludables y frescos, elaborados con ingredientes locales y de temporada. Con una decoración que incluye plantas y jardinería, este café es el lugar ideal para disfrutar de una comida o café en un ambiente tranquilo y natural."
                 android:textColor="@color/black"
                 android:textSize="15sp"/>
 
             <Button
-                android:id="@+id/btnReserva"
+                android:id="@+id/btnReservaTGC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#00BCD4"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#8BC34A"
                 android:onClick="Login"
                 android:text="Hacer Reserva"
-                app:cornerRadius="20dp"
-                android:layout_marginTop="15dp"/>
+                app:cornerRadius="20dp" />
+
             <Button
-                android:id="@+id/btn_carta"
+                android:id="@+id/btn_cartaTGC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#00BCD4"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#8BC34A"
                 android:onClick="Login"
                 android:text="Consultar Carta"
-                app:cornerRadius="20dp"
-                android:layout_marginTop="15dp"/>
+                app:cornerRadius="20dp" />
+
             <Button
-                android:id="@+id/btn_horario"
+                android:id="@+id/btn_horarioTGC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#00BCD4"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#8BC34A"
                 android:onClick="Login"
                 android:text="Consultar Horario"
-                app:cornerRadius="20dp"
-                android:layout_marginTop="15dp"/>
+                app:cornerRadius="20dp" />
+
+            <Button
+                android:id="@+id/btn_verReservasTGC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="#8BC34A"
+                android:onClick="Login"
+                android:text="Consultar Mis Reservas"
+                app:cornerRadius="20dp" />
 
         </LinearLayout>
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

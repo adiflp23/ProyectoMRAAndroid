@@ -4,11 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PrimeraPantalla"
-    android:background="@drawable/mesonrafaelalbertiver" >
-
+    tools:context="TheGardenCafe.PrimeraPantallaTGC"
+    android:background="@drawable/thegardencafever"
+    >
     <ImageView
-        android:id="@+id/volverAtrasMRA"
+        android:id="@+id/volverAtrasTGC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="34dp"
@@ -21,23 +21,23 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tituloMRA"
+        android:id="@+id/tituloTGC"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
         android:layout_marginTop="480dp"
         android:layout_marginEnd="18dp"
-        android:text="Mesón Rafael Alberti"
+        android:text="The Garden Café"
         android:textColor="#FFFFFF"
         android:textSize="28sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/subtituloMRA"
+        android:id="@+id/subtituloTGC"
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:layout_marginStart="18dp"
@@ -47,16 +47,16 @@
         android:layout_marginTop="16dp"
         android:textSize="15sp"
         android:alpha="0.8"
-        android:text="Mesón Rafael Alberti es un restaurante español que ofrece una selección de platillos tradicionales de la cocina española, con ingredientes frescos y de alta calidad."
+        android:text="The Garden Café es un restaurante con una atmósfera relajada que ofrece una amplia variedad de platillos saludables y frescos, elaborados con ingredientes locales y de temporada. "
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/tituloMRA"
-        app:layout_constraintTop_toBottomOf="@+id/tituloMRA"
+        app:layout_constraintStart_toStartOf="@+id/tituloTGC"
+        app:layout_constraintTop_toBottomOf="@+id/tituloTGC"
         />
 
     <RatingBar
-        android:id="@+id/ratingBarPantallaPrincipalMRA"
+        android:id="@+id/ratingBarPantallaPrincipalTGC"
         style="?android:attr/ratingBarStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,22 +66,22 @@
         android:progressTint="@color/colorAccent"
         android:rating="4.5"
         android:stepSize="0.5"
-        app:layout_constraintStart_toStartOf="@id/subtituloMRA"
-        app:layout_constraintTop_toBottomOf="@id/subtituloMRA"
+        app:layout_constraintStart_toStartOf="@id/subtituloTGC"
+        app:layout_constraintTop_toBottomOf="@id/subtituloTGC"
         />
 
     <TextView
-        android:id="@+id/numDelRatingBarMRA"
+        android:id="@+id/numDelRatingBarTGC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="100dp"
-        android:text="4.71"
+        android:text="4.45"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@id/ratingBarPantallaPrincipalMRA"
-        app:layout_constraintTop_toTopOf="@id/subtituloMRA" />
+        app:layout_constraintStart_toEndOf="@id/ratingBarPantallaPrincipalTGC"
+        app:layout_constraintTop_toTopOf="@id/subtituloTGC" />
 
     <TextView
         android:id="@+id/numDeCalificaciones"
@@ -89,14 +89,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:text="(320)"
+        android:text="(225)"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
-        app:layout_constraintStart_toEndOf="@id/numDelRatingBarMRA"
-        app:layout_constraintTop_toTopOf="@id/numDelRatingBarMRA" />
+        app:layout_constraintStart_toEndOf="@id/numDelRatingBarTGC"
+        app:layout_constraintTop_toTopOf="@id/numDelRatingBarTGC" />
 
     <ImageView
-        android:id="@+id/flechitaArribaMRA"
+        android:id="@+id/flechitaArribaTGC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="175dp"
@@ -107,10 +107,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.947"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/ratingBarPantallaPrincipalMRA" />
+        app:layout_constraintTop_toBottomOf="@id/ratingBarPantallaPrincipalTGC" />
 
     <TextView
-        android:id="@+id/masDetallesMRA"
+        android:id="@+id/masDetallesTGC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="150dp"
@@ -123,6 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flechitaArribaMRA"
+        app:layout_constraintTop_toBottomOf="@+id/flechitaArribaTGC"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

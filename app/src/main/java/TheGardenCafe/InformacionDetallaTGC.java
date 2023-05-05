@@ -1,4 +1,4 @@
-package BistroDeLaMer;
+package TheGardenCafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,20 +8,20 @@ import android.view.View;
 
 import com.example.mesonrafaelalberti.R;
 
-public class InformacionDetallaBDLM extends AppCompatActivity {
+public class InformacionDetallaTGC extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_informacion_detalla_bdlm);
+        setContentView(R.layout.activity_informacion_detalla_tgc);
     }
     public void PrimeraPantallaBDLM(View view){
-        Intent PrimeraPantallaBDLM = new Intent(this, BistroDeLaMer.PrimeraPantallaBDLM.class);
+        Intent PrimeraPantallaBDLM = new Intent(this, TheGardenCafe.PrimeraPantallaTGC.class);
         startActivity(PrimeraPantallaBDLM);
         finish();
     }
     public void Login(View view){
-        Intent Login = new Intent(this, BistroDeLaMer.LoginBDLM.class);
+        Intent Login = new Intent(this, TheGardenCafe.LoginTGC.class);
         startActivity(Login);
         finish();
     }

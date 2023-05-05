@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="5dp"
         android:layout_marginLeft="5dp"
-        android:text="(210)"
+        android:text="(35)"
         android:textColor="#FFFFFF"
         android:textSize="15sp"
         app:layout_constraintStart_toEndOf="@id/numDelRatingBar"

@@ -45,4 +45,14 @@ public class ConsultarRestaurantes extends AppCompatActivity {
         startActivity(PrimeraPantallaBDLM);
         finish();
     }
+    public void PrimeraPantalla(View view){
+        Intent PrimeraPantalla = new Intent(this, com.example.mesonrafaelalberti.PrimeraPantalla.class);
+        startActivity(PrimeraPantalla);
+        finish();
+    }
+    public void PrimeraPantallaTGC(View view){
+        Intent PrimeraPantallaTGC = new Intent(this, TheGardenCafe.PrimeraPantallaTGC.class);
+        startActivity(PrimeraPantallaTGC);
+        finish();
+    }
 }

@@ -1,4 +1,4 @@
-package com.example.mesonrafaelalberti;
+package TheGardenCafe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class PrimeraPantalla extends AppCompatActivity {
+import com.example.mesonrafaelalberti.R;
+
+public class PrimeraPantallaTGC extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_primera_pantalla);
+        setContentView(R.layout.activity_primera_pantalla_tgc);
     }
     public void ConsultarRestaurantes(View view){
         Intent Consultar = new Intent(this, Lanzar.ConsultarRestaurantes.class);
@@ -19,7 +21,7 @@ public class PrimeraPantalla extends AppCompatActivity {
         finish();
     }
     public void InformacionDetalla(View view){
-        Intent IDetalla = new Intent(this, com.example.mesonrafaelalberti.InformacionDetallaMRA.class);
+        Intent IDetalla = new Intent(this, TheGardenCafe.InformacionDetallaTGC.class);
         startActivity(IDetalla);
         finish();
     }
