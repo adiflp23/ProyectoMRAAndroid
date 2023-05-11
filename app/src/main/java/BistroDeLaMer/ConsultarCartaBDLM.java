@@ -1,4 +1,4 @@
-package TheGardenCafe;
+package BistroDeLaMer;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -16,7 +16,6 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.mesonrafaelalberti.R;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,25 +23,21 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import BistroDeLaMer.AdaptadorHorarioBDLM;
-import BistroDeLaMer.ConsultarHorarioBDLM;
-import BistroDeLaMer.horarioBDLM;
-
-public class ConsultarHorarioTGC extends AppCompatActivity {
-    List<horarioTGC> horarioTGCList;
+public class ConsultarCartaBDLM extends AppCompatActivity {
+    List<cartaBDLM> cartaBDLMList;
     RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consultar_horario_tgc);
-        recyclerView = (RecyclerView)findViewById(R.id.rViewListaTGC);
+        setContentView(R.layout.activity_consultar_carta_bdlm);
+        recyclerView = (RecyclerView)findViewById(R.id.rViewCartaMRA);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        horarioTGCList = new ArrayList<>();
-        mostrarHorarioTGC("http://10.0.0.43/thegardencafe/mostrarHorario.php");
+        cartaBDLMList = new ArrayList<>();
+        mostrarCartaBDLM("http://10.0.0.43/bistrodelamer/mostrarCarta.php");
     }
-    public void mostrarHorarioTGC(String URL) {
+    public void mostrarCartaBDLM(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -51,13 +46,13 @@ public class ConsultarHorarioTGC extends AppCompatActivity {
 
                     for (int i = 0; i < array.length(); i++){
                         JSONObject obj = (JSONObject) array.get(i);
-                        horarioTGCList.add(new horarioTGC(
-                                obj.getString("dia"),
-                                obj.getString("apertura"),
-                                obj.getString("cierre")
+                        cartaBDLMList.add(new cartaBDLM(
+                                obj.getString("categoria"),
+                                obj.getString("nombre"),
+                                (float) obj.getDouble("precio")
                         ));
                     }
-                    AdaptadorHorarioTGC adaptador = new AdaptadorHorarioTGC(getApplicationContext(), horarioTGCList);
+                    AdaptadorCartaBDLM adaptador = new AdaptadorCartaBDLM(getApplicationContext(), cartaBDLMList);
                     recyclerView.setAdapter(adaptador);
                 }catch (JSONException e){
 
@@ -67,16 +62,15 @@ public class ConsultarHorarioTGC extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ConsultarHorarioTGC.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ConsultarCartaBDLM.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
-
     public void volverAtras(View view){
-        Intent volverAtras = new Intent(this, TheGardenCafe.InformacionDetallaTGCClon.class);
+        Intent volverAtras = new Intent(this, BistroDeLaMer.InformacionDetallaBDLMClon.class);
         startActivity(volverAtras);
         overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();

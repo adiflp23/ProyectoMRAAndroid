@@ -21,7 +21,7 @@ public class AyudaRestaurantes extends AppCompatActivity {
     public void ConsultarRestaurantes(View view){
         Intent ConsultarRestaurantes = new Intent(this, ConsultarRestaurantes.class);
         startActivity(ConsultarRestaurantes);
-        overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
 }

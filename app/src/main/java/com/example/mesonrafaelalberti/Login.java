@@ -62,6 +62,7 @@ public class Login extends AppCompatActivity {
                 if(!response.isEmpty()){
                     Intent intent = new Intent(getApplicationContext(), InformacionDetallaMRAClon.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
                 }else{
                     Toast.makeText(Login.this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
                 }

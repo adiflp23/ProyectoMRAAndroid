@@ -52,6 +52,7 @@ public class LoginBDLM extends AppCompatActivity {
     public void onBackPressed() {
         Intent Informacion = new Intent(this, BistroDeLaMer.InformacionDetallaBDLM.class);
         startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
 
@@ -62,6 +63,7 @@ public class LoginBDLM extends AppCompatActivity {
                 if(!response.isEmpty()){
                     Intent intent = new Intent(getApplicationContext(), BistroDeLaMer.InformacionDetallaBDLMClon.class);
                     startActivity(intent);
+                    overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
                 }else{
                     Toast.makeText(LoginBDLM.this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
                 }

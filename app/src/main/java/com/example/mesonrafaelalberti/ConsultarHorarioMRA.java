@@ -84,5 +84,12 @@ public class ConsultarHorarioMRA extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
+    public void volverAtras(View view){
+        Intent volverAtras = new Intent(this, com.example.mesonrafaelalberti.InformacionDetallaMRAClon.class);
+        startActivity(volverAtras);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
+
 
 }

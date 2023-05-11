@@ -125,21 +125,22 @@
                 android:text="Hacer Reserva"
                 app:cornerRadius="20dp"
                 android:layout_marginTop="15dp"/>
+
             <Button
                 android:id="@+id/btn_carta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
                 android:backgroundTint="#00BCD4"
-                android:onClick="Login"
+                android:onClick="mostrarCarta"
                 android:text="Consultar Carta"
-                app:cornerRadius="20dp"
-                android:layout_marginTop="15dp"/>
+                app:cornerRadius="20dp" />
             <Button
                 android:id="@+id/btn_horario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BCD4"
-                android:onClick="Login"
+                android:onClick="mostrarHorario"
                 android:text="Consultar Horario"
                 app:cornerRadius="20dp"
                 android:layout_marginTop="15dp"/>

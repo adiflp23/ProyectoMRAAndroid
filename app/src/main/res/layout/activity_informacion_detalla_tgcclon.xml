@@ -132,7 +132,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#8BC34A"
-                android:onClick="Login"
+                android:onClick="mostrarCarta"
                 android:text="Consultar Carta"
                 app:cornerRadius="20dp" />
 
@@ -142,7 +142,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#8BC34A"
-                android:onClick="Login"
+                android:onClick="mostrarHorario"
                 android:text="Consultar Horario"
                 app:cornerRadius="20dp" />
 

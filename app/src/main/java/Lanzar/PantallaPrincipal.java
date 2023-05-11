@@ -1,16 +1,11 @@
 package Lanzar;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 
-import com.example.mesonrafaelalberti.MainActivity;
 import com.example.mesonrafaelalberti.R;
 
 public class PantallaPrincipal extends AppCompatActivity {

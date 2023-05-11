@@ -10,9 +10,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.example.mesonrafaelalberti.R;
-import com.example.mesonrafaelalberti.menuRegistrar;
-
-import BistroDeLaMer.PrimeraPantallaBDLM;
 
 public class ConsultarRestaurantes extends AppCompatActivity {
 
@@ -43,16 +40,19 @@ public class ConsultarRestaurantes extends AppCompatActivity {
     public void PrimeraPantallaBDLM(View view){
         Intent PrimeraPantallaBDLM = new Intent(this, BistroDeLaMer.PrimeraPantallaBDLM.class);
         startActivity(PrimeraPantallaBDLM);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
     public void PrimeraPantalla(View view){
         Intent PrimeraPantalla = new Intent(this, com.example.mesonrafaelalberti.PrimeraPantalla.class);
         startActivity(PrimeraPantalla);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
     public void PrimeraPantallaTGC(View view){
         Intent PrimeraPantallaTGC = new Intent(this, TheGardenCafe.PrimeraPantallaTGC.class);
         startActivity(PrimeraPantallaTGC);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
 }

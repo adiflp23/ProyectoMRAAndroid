@@ -24,25 +24,22 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-import BistroDeLaMer.AdaptadorHorarioBDLM;
-import BistroDeLaMer.ConsultarHorarioBDLM;
-import BistroDeLaMer.horarioBDLM;
+public class ConsultarCartaTGC extends AppCompatActivity {
 
-public class ConsultarHorarioTGC extends AppCompatActivity {
-    List<horarioTGC> horarioTGCList;
+    List<cartaTGC> cartaTGCList;
     RecyclerView recyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_consultar_horario_tgc);
-        recyclerView = (RecyclerView)findViewById(R.id.rViewListaTGC);
+        setContentView(R.layout.activity_consultar_carta_tgc);
+        recyclerView = (RecyclerView)findViewById(R.id.rViewCartaTGC);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        horarioTGCList = new ArrayList<>();
-        mostrarHorarioTGC("http://10.0.0.43/thegardencafe/mostrarHorario.php");
+        cartaTGCList = new ArrayList<>();
+        mostrarCartaTGC("http://10.0.0.43/thegardencafe/mostrarCarta.php");
     }
-    public void mostrarHorarioTGC(String URL) {
+    public void mostrarCartaTGC(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
@@ -51,13 +48,13 @@ public class ConsultarHorarioTGC extends AppCompatActivity {
 
                     for (int i = 0; i < array.length(); i++){
                         JSONObject obj = (JSONObject) array.get(i);
-                        horarioTGCList.add(new horarioTGC(
-                                obj.getString("dia"),
-                                obj.getString("apertura"),
-                                obj.getString("cierre")
+                        cartaTGCList.add(new cartaTGC(
+                                obj.getString("categoria"),
+                                obj.getString("nombre"),
+                                (float) obj.getDouble("precio")
                         ));
                     }
-                    AdaptadorHorarioTGC adaptador = new AdaptadorHorarioTGC(getApplicationContext(), horarioTGCList);
+                    AdaptadorCartaTGC adaptador = new AdaptadorCartaTGC(getApplicationContext(), cartaTGCList);
                     recyclerView.setAdapter(adaptador);
                 }catch (JSONException e){
 
@@ -67,7 +64,7 @@ public class ConsultarHorarioTGC extends AppCompatActivity {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
-                Toast.makeText(ConsultarHorarioTGC.this, error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ConsultarCartaTGC.this, error.getMessage(), Toast.LENGTH_SHORT).show();
 
             }
         });

@@ -21,6 +21,7 @@ public class InformacionDetallaMRA extends AppCompatActivity {
     public void Login(View view){
         Intent Login = new Intent(this, com.example.mesonrafaelalberti.Login.class);
         startActivity(Login);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
 

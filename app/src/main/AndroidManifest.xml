@@ -16,6 +16,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name="BistroDeLaMer.ConsultarCartaBDLM"
+            android:exported="false" />
+        <activity
+            android:name="TheGardenCafe.ConsultarCartaTGC"
+            android:exported="false" />
+        <activity
+            android:name=".ConsultarCartaMRA"
+            android:exported="false" />
+        <activity
             android:name="TheGardenCafe.ConsultarHorarioTGC"
             android:exported="false" />
         <activity
@@ -76,18 +85,7 @@
             android:name="Lanzar.AyudaRestaurantes"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-        <activity
             android:name="Lanzar.ConsultarRestaurantes"
-            android:exported="false" />
-        <activity
-            android:name=".menuRegistrar"
-            android:exported="false"
-            android:label="@string/title_activity_menu_registrar"
-            android:theme="@style/Theme.MesonRafaelAlberti" />
-        <activity
-            android:name=".menuEstandar"
             android:exported="false" />
         <activity
             android:name="Lanzar.PantallaPrincipal"

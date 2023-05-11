@@ -4,20 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.mesonrafaelalberti.ConsultarHorarioMRA">
+    tools:context="com.example.mesonrafaelalberti.ConsultarCartaMRA">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rViewListaMRA"
+            android:id="@+id/rViewCartaMRA"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_margin="5dp"
-            >
+            android:layout_margin="5dp">
 
         </androidx.recyclerview.widget.RecyclerView>
+
     </ScrollView>
 
     <Button
