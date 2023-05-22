@@ -42,7 +42,7 @@ public class RegistrarBDLM extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RegistrarUsuarioBDLM("http://10.0.0.43/bistrodelamer/registrar.php");
+                RegistrarUsuarioBDLM("http://10.0.0.18/bistrodelamer/registrar.php");
             }
         });
 

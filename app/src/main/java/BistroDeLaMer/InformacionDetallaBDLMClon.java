@@ -27,4 +27,16 @@ public class InformacionDetallaBDLMClon extends AppCompatActivity {
         overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
+    public void hacerReserva(View view){
+        Intent hacerReserva = new Intent(this, BistroDeLaMer.HacerReservaBDLM.class);
+        startActivity(hacerReserva);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
+    public void consultarReserva(View view){
+        Intent consultarReserva = new Intent(this, BistroDeLaMer.ConsultarReservasBDLM.class);
+        startActivity(consultarReserva);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
 }

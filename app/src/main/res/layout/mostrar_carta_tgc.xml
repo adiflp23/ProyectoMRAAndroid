@@ -41,15 +41,6 @@
                 android:layout_height="wrap_content"
                 android:textSize="20dp"
                 android:text="Precio" />
-            <TextView
-                android:id="@+id/PrecioTGC"
-                android:textColor="@color/black"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintStart_toStartOf="@+id/mraPrecio"
-                app:layout_constraintTop_toBottomOf="@+id/mraPrecio"
-                android:textSize="20dp"
-                android:text="€" />
 
         </LinearLayout>
 

@@ -46,8 +46,8 @@ public class AdaptadorCartaBDLM extends RecyclerView.Adapter<AdaptadorCartaBDLM.
         cartaBDLM carta = cartaBDLMList.get(position);
 
         viewHolder.bdlmCategoria.setText(carta.getCategoria());
-        viewHolder.bdlmNombre.setText(carta.getNombre());
-        viewHolder.bdlmPrecio.setText(String.valueOf(carta.getPrecio()));
+        viewHolder.bdlmNombre.setText("Plato: " + carta.getNombre());
+        viewHolder.bdlmPrecio.setText("Precio: " + String.valueOf(carta.getPrecio()) + "€");
 
     }
 

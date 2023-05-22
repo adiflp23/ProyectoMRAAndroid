@@ -37,7 +37,7 @@ public class ConsultarCartaTGC extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         cartaTGCList = new ArrayList<>();
-        mostrarCartaTGC("http://10.0.0.43/thegardencafe/mostrarCarta.php");
+        mostrarCartaTGC("http://10.0.0.18/thegardencafe/mostrarCarta.php");
     }
     public void mostrarCartaTGC(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {

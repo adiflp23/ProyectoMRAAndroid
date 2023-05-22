@@ -27,5 +27,17 @@ public class InformacionDetallaTGCClon extends AppCompatActivity {
         overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
+    public void hacerReserva(View view){
+        Intent hacerReserva = new Intent(this, TheGardenCafe.HacerReservaTGC.class);
+        startActivity(hacerReserva);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
+    public void consultarReserva(View view){
+        Intent consultarReserva = new Intent(this, TheGardenCafe.ConsultarReservasTGC.class);
+        startActivity(consultarReserva);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
 
 }

@@ -44,7 +44,7 @@ public class RegistrarTGC extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RegistrarUsuarioMRA("http://10.0.0.43/thegardencafe/registrar.php");
+                RegistrarUsuarioMRA("http://10.0.0.18/thegardencafe/registrar.php");
             }
         });
     }

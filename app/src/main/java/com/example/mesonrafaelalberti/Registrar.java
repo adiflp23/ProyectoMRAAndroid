@@ -42,7 +42,7 @@ public class Registrar extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                RegistrarUsuarioMRA("http://10.0.0.43/rafaelalberti/registrar.php");
+                RegistrarUsuarioMRA("http://10.0.0.18/rafaelalberti/registrar.php");
             }
         });
 
@@ -56,10 +56,13 @@ public class Registrar extends AppCompatActivity {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                if(!response.isEmpty()){
                 Toast.makeText(Registrar.this, "Usuario Registrado Correctamente", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(getApplicationContext(), com.example.mesonrafaelalberti.Login.class);
                 startActivity(intent);
-
+                }else{
+                    Toast.makeText(Registrar.this, "Usuario o contraseña incorrecta", Toast.LENGTH_SHORT).show();
+                }
             }
         }, new Response.ErrorListener() {
             @Override

@@ -43,8 +43,8 @@ public class AdaptadorCartaTGC extends RecyclerView.Adapter<AdaptadorCartaTGC.Vi
         cartaTGC carta = cartaTGCList.get(position);
 
         viewHolder.tgcCategoria.setText(carta.getCategoria());
-        viewHolder.tgcNombre.setText(carta.getNombre());
-        viewHolder.tgcPrecio.setText(String.valueOf(carta.getPrecio()));
+        viewHolder.tgcNombre.setText("Plato: "+ carta.getNombre());
+        viewHolder.tgcPrecio.setText("Precio: " + String.valueOf(carta.getPrecio()) + "€");
 
     }
     @Override

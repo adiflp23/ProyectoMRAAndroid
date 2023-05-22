@@ -46,8 +46,8 @@ public class AdaptadorCartaMRA extends RecyclerView.Adapter<AdaptadorCartaMRA.Vi
         cartaMRA carta = cartaMRAList.get(position);
 
         viewHolder.mraCategoria.setText(carta.getCategoria());
-        viewHolder.mraNombre.setText(carta.getNombre());
-        viewHolder.mraPrecio.setText(String.valueOf(carta.getPrecio()));
+        viewHolder.mraNombre.setText("Plato: "+ carta.getNombre());
+        viewHolder.mraPrecio.setText("Precio: "+ String.valueOf(carta.getPrecio()) + "€");
 
     }
 

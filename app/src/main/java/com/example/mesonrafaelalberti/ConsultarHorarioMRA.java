@@ -47,7 +47,7 @@ public class ConsultarHorarioMRA extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         horarioMRAList = new ArrayList<>();
-        mostrarHorarioMRA("http://10.0.0.43/rafaelalberti/mostrarHorario.php");
+        mostrarHorarioMRA("http://10.0.0.18/rafaelalberti/mostrarHorario.php");
     }
 
 

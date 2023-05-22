@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -25,6 +26,7 @@ public class Login extends AppCompatActivity {
 
     Button b1;
     EditText edusuario, edcontrasena;
+    public static String DNI;
 
 
     @Override
@@ -37,7 +39,7 @@ public class Login extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loginUsuarioMRA("http://10.0.0.43/rafaelalberti/login.php");
+                loginUsuarioMRA("http://10.0.0.18/rafaelalberti/login.php");
             }
         });
     }
@@ -55,11 +57,14 @@ public class Login extends AppCompatActivity {
         finish();
     }
 
+
+
     public void loginUsuarioMRA(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
                 if(!response.isEmpty()){
+                    DNI = TextUtils.substring(response, 8, 17);
                     Intent intent = new Intent(getApplicationContext(), InformacionDetallaMRAClon.class);
                     startActivity(intent);
                     overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);

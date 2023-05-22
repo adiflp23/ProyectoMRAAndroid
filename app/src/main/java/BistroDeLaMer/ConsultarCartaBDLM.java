@@ -35,7 +35,7 @@ public class ConsultarCartaBDLM extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         cartaBDLMList = new ArrayList<>();
-        mostrarCartaBDLM("http://10.0.0.43/bistrodelamer/mostrarCarta.php");
+        mostrarCartaBDLM("http://10.0.0.18/bistrodelamer/mostrarCarta.php");
     }
     public void mostrarCartaBDLM(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {

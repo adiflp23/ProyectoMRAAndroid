@@ -121,7 +121,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BCD4"
-                android:onClick="Login"
+                android:onClick="hacerReserva"
                 android:text="Hacer Reserva"
                 app:cornerRadius="20dp"
                 android:layout_marginTop="15dp"/>
@@ -150,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="#00BCD4"
-                android:onClick="Login"
+                android:onClick="consultarReserva"
                 android:text="Consultar Mis Reservas"
                 app:cornerRadius="20dp"
                 android:layout_marginTop="15dp"/>

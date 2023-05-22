@@ -122,7 +122,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#8BC34A"
-                android:onClick="Login"
+                android:onClick="hacerReserva"
                 android:text="Hacer Reserva"
                 app:cornerRadius="20dp" />
 
@@ -152,7 +152,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
                 android:backgroundTint="#8BC34A"
-                android:onClick="Login"
+                android:onClick="consultarReserva"
                 android:text="Consultar Mis Reservas"
                 app:cornerRadius="20dp" />
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -28,6 +29,7 @@ import java.util.Map;
 public class LoginBDLM extends AppCompatActivity {
     Button b1;
     EditText edusuario, edcontrasena;
+    public static String DNI;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +40,7 @@ public class LoginBDLM extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loginUsuarioBDLM("http://10.0.0.43/bistrodelamer/login.php");
+                loginUsuarioBDLM("http://10.0.0.18/bistrodelamer/login.php");
             }
         });
     }
@@ -61,6 +63,7 @@ public class LoginBDLM extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if(!response.isEmpty()){
+                    DNI = TextUtils.substring(response, 8, 17);
                     Intent intent = new Intent(getApplicationContext(), BistroDeLaMer.InformacionDetallaBDLMClon.class);
                     startActivity(intent);
                     overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);

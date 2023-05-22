@@ -37,7 +37,7 @@ public class ConsultarHorarioBDLM extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         horarioBDLMList = new ArrayList<>();
-        mostrarHorarioBDLM("http://10.0.0.43/bistrodelamer/mostrarHorario.php");
+        mostrarHorarioBDLM("http://10.0.0.18/bistrodelamer/mostrarHorario.php");
     }
     public void mostrarHorarioBDLM(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {

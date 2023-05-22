@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -27,6 +28,9 @@ import BistroDeLaMer.LoginBDLM;
 public class LoginTGC extends AppCompatActivity {
     Button b1;
     EditText edusuario, edcontrasena;
+
+    public static String DNI;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +41,7 @@ public class LoginTGC extends AppCompatActivity {
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                loginUsuarioTGC("http://10.0.0.43/thegardencafe/login.php");
+                loginUsuarioTGC("http://10.0.0.18/thegardencafe/login.php");
             }
         });
     }
@@ -60,6 +64,7 @@ public class LoginTGC extends AppCompatActivity {
             @Override
             public void onResponse(String response) {
                 if(!response.isEmpty()){
+                    DNI = TextUtils.substring(response, 8, 17);
                     Intent intent = new Intent(getApplicationContext(), TheGardenCafe.InformacionDetallaTGCClon.class);
                     startActivity(intent);
                     overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);

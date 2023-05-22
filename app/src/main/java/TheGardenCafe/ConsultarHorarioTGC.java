@@ -40,7 +40,7 @@ public class ConsultarHorarioTGC extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         horarioTGCList = new ArrayList<>();
-        mostrarHorarioTGC("http://10.0.0.43/thegardencafe/mostrarHorario.php");
+        mostrarHorarioTGC("http://10.0.0.18/thegardencafe/mostrarHorario.php");
     }
     public void mostrarHorarioTGC(String URL) {
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL, new Response.Listener<String>() {

@@ -119,11 +119,12 @@
                 android:id="@+id/btnReservaMRA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="@color/black"
+                android:layout_marginTop="15dp"
 
+                android:backgroundTint="@color/black"
+                android:onClick="hacerReserva"
                 android:text="Hacer Reserva"
-                app:cornerRadius="20dp"
-                android:layout_marginTop="15dp"/>
+                app:cornerRadius="20dp" />
 
             <Button
                 android:id="@+id/btn_cartaMRA"
@@ -149,7 +150,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:backgroundTint="@color/black"
-
+                android:onClick="consultarReserva"
                 android:text="Consultar Mis Reservas"
                 app:cornerRadius="20dp"
                 android:layout_marginTop="15dp"/>
