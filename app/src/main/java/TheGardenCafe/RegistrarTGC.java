@@ -90,4 +90,11 @@ public class RegistrarTGC extends AppCompatActivity {
         requestQueue.add(stringRequest);
     }
 
+    public void onBackPressed() {
+        Intent Informacion = new Intent(this, TheGardenCafe.LoginTGC.class);
+        startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
+
 }

@@ -94,5 +94,11 @@ public class ConsultarReservasMRA extends AppCompatActivity {
         overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
+    public void onBackPressed() {
+        Intent Informacion = new Intent(this, com.example.mesonrafaelalberti.InformacionDetallaMRAClon.class);
+        startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
 
 }

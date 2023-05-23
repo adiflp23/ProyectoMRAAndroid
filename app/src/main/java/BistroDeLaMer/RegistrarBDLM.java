@@ -86,4 +86,11 @@ public class RegistrarBDLM extends AppCompatActivity {
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         requestQueue.add(stringRequest);
     }
+    public void onBackPressed() {
+        Intent Informacion = new Intent(this, BistroDeLaMer.LoginBDLM.class);
+        startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
+
 }

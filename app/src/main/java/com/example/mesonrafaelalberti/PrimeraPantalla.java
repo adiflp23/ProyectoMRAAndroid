@@ -23,4 +23,10 @@ public class PrimeraPantalla extends AppCompatActivity {
         startActivity(IDetalla);
         finish();
     }
+    public void onBackPressed() {
+        Intent Informacion = new Intent(this, Lanzar.ConsultarRestaurantes.class);
+        startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
 }

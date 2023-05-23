@@ -75,5 +75,11 @@ public class ConsultarCartaBDLM extends AppCompatActivity {
         overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
+    public void onBackPressed() {
+        Intent Informacion = new Intent(this, BistroDeLaMer.InformacionDetallaBDLMClon.class);
+        startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
 
 }

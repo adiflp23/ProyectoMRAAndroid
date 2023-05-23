@@ -81,5 +81,11 @@ public class ConsultarHorarioTGC extends AppCompatActivity {
         overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
         finish();
     }
+    public void onBackPressed() {
+        Intent Informacion = new Intent(this, TheGardenCafe.InformacionDetallaTGCClon.class);
+        startActivity(Informacion);
+        overridePendingTransition(R.anim.zoom_back_in, R.anim.zoom_back_out);
+        finish();
+    }
 
 }
